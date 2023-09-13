@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background:  #667eea 0%; */
+    font-family: sans-serif;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* height: 100vh; */
+}
+
+header {
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    height: 8%;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+   
+}
+
+header .logo {
+    /* color: rgb(83, 83, 83); */
+    height: 60px;
+    line-height: 60px;
+    /* font-size: 24px; */
+}
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    /* margin: 0; */
+    /* padding: 0; */
+    display:flex;
+    list-style-type:none;
+    padding:0;
+    justify-content:flex-end;
+    position: relative;
+    bottom: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header nav ul li a {
+    color: rgb(83, 83, 83);
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+    /* color: #ffffff; */
+    /* background-color: #aaaaaa; */
+    border: 3px solid rgb(20,15,105);
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.menu-toggle {
+    color: rgb(94,94,94);
+    margin-left: auto;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.left {
+    margin-right:auto;
+}
+
+
+/* responsive */
+
+@media (max-width: 650px){
+    header {
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s all;
+        margin-left: auto;
+    }
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: left;
+    }
+
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        color: rgb(255, 255, 255);
+        border: 0px !important;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a.active{
+        color: #ffffff;
+        background-color: #aaaaaa;
+    }
+
+    .img-logo {
+        position: relative;
+        top: -21px;
+    }
+}

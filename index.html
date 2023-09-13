@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Gigih</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="jquery-main/jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+                <div class="logo">
+                    <img class="img-logo" src="assets/logo/logo-gigih-header.png">
+                </div>
+                <nav>
+                    <ul class="primary-nav">
+                        <li class="left"><a href="#home">Home</a></li>
+                        <li><a href="#about" class="active">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </header>
+
+    <script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $('nav').toggleClass('active');
+            })
+        });
+    </script>
+</body>
+
+</html>
