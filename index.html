@@ -2,43 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio - Gigih</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <script src="jquery-main/jquery.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- <div class="container"> -->
-            <!-- <div class="row"> -->
-                <div class="logo">
-                    <img class="img-logo" src="assets/logo/logo-gigih-header.png">
-                </div>
-                <nav>
-                    <ul class="primary-nav">
-                        <li class="left"><a href="#home">Home</a></li>
-                        <li><a href="#about" class="active">About</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="menu-toggle">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </div>
-            <!-- </div> -->
-        <!-- </div> -->
-    </header>
+    <div class="container-fluid">
+        <!-- Navbar Start -->
+        <div class="container-header">
+            <div class="logo">
+                <img class="img-logo" src="assets/logo/logo-gigih-header.png" />
+            </div>
+            <nav>
+                <ul class="primary-nav">
+                    <li class="left"><a href="#home">Home</a></li>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+        <!-- Navbar End -->
 
-    <script>
-        $(document).ready(function () {
-            $(".menu-toggle").click(function () {
-                $('nav').toggleClass('active');
-            })
-        });
-    </script>
+        <!-- Content Start -->
+        <div class="flex-container" id="home">
+            <div class="text-art flex-item-left">
+                <h3 class="title-1">I'm</h3>
+                <h1 class="title-2">Gigih Satriono</h1>
+                <h3 class="title-3">Full Stack Web Developer</h3>
+            </div>
+            <div class="img-profile flex-item-right">
+                <img src="assets/image/Gigih.png" class="images-porfolio">
+            </div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Work Experience Start -->
+        <div class="timeline">
+            <div class="header-timeline">
+                <div class="color-overlay">
+                    <div class="name">Timeline</div>
+                    <div class="sub">Work Experience</div>
+                </div>
+            </div>
+
+            <div class="body-experience">
+                <ul>
+                    <li>
+                        <div class="point pink"></div>
+                        <div class="date"></div>
+                        <div class="desc">
+                            <h3>Lorem ipsum, dolor sit amet.</h3>
+                            <h4>Lorem ipsum, dolor sit amet.</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="point green"></div>
+                        <div class="date"></div>
+                        <div class="desc">
+                            <h3>Lorem ipsum, dolor sit amet.</h3>
+                            <h4>Lorem ipsum, dolor sit amet.</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="point pink"></div>
+                        <div class="date"></div>
+                        <div class="desc">
+                            <h3>Lorem ipsum, dolor sit amet.</h3>
+                            <h4>Lorem ipsum, dolor sit amet.</h4>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="point green"></div>
+                        <div class="date"></div>
+                        <div class="desc">
+                            <h3>Lorem ipsum, dolor sit amet.</h3>
+                            <h4>Lorem ipsum, dolor sit amet.</h4>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Work Experience End -->
+
+        <!-- My Service Start -->
+        <div class="service">
+            <h1>My Service</h1>
+            <div class="row-service">
+                <div class="box-container">
+                    <div class="flex-column">
+                        <div class="icon-service">
+                            <img src="assets/logo/bg-icon.png" alt="">
+                        </div>
+                        <div class="text-service">
+                            <h3>Creative Design</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="flex-column">
+                        <div class="icon-service">
+                            <img src="assets/logo/bg-icon.png" alt="">
+                        </div>
+                        <div class="text-service">
+                            <h3>Graphic Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-service">
+                <div class="box-container">
+                    <div class="flex-column">
+                        <div class="icon-service">
+                            <img src="assets/logo/bg-icon.png" alt="">
+                        </div>
+                        <div class="text-service">
+                            <h3>Creative Design</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="flex-column">
+                        <div class="icon-service">
+                            <img src="assets/logo/bg-icon.png" alt="">
+                        </div>
+                        <div class="text-service">
+                            <h3>Graphic Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- My Service End -->
+
+        <!-- My Contact Start -->
+        <div class="container-fluid-contact" style="padding: 2rem 8rem;">
+            <h1>My Contact</h1>
+            <div class="container-contact">
+                <div class="row-contact" style="display: flex;">
+                    <div class="alamat" style="flex: 50% !important;">
+                        <p>Jln. Merdeka 2 Kab.Tangerang Kec.Panongan</p>
+                    </div>
+                    <form action="" enctype="multipart/form-data" autocomplete="off">
+                        <div class="group-input" style="flex: 50% !important;">
+                            <input type="text" name="fullname" id="fullname" class="form-control"
+                                placeholder="Full Name" style="width: 100%;
+                                    height: 40px;
+                                    border: 1px solid #d2d6d8;
+                                    border-radius: 12px;
+                                    padding: 10px;">
+
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" style="width: 100%;
+                                    padding: 10px 0px;
+                                    height: 40px;
+                                    border: 1px solid #d2d6d8;
+                                    border-radius: 12px;
+                                    margin-top: 20px;
+                                    padding: 10px;">
+
+                            <input type="text" name="description" id="description" placeholder="Description"
+                                style="width: 100%;
+                                padding: 10px 0px;
+                                height: 70px;
+                                border: 1px solid #d2d6d8;
+                                border-radius: 12px;
+                                margin-top: 20px;
+                                padding: 10px;">
+                            <button class="btn-send" style="width: 50%;
+                                margin-top: 20px;
+                                cursor: pointer;
+                                padding: 10px;
+                                border-radius: 9px;
+                                height: 60px;
+                                background: #0D6EFD;
+                                border: 1px solid #0D6EFD;
+                                color: #FFF;
+                                font-size: 19px;
+                                font-family: Roboto Serif, serif ">Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End My Contact -->
+    <footer style="background: #000; color: #FFF; padding: 25px 20px; margin-top: 20px; margin-top: 20px;">
+        &copy; Portofolio 2023
+    </footer>
+    </div>
 </body>
+
+<script>
+    $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+            $('nav').toggleClass('active')
+        })
+    })
+</script>
 
 </html>
